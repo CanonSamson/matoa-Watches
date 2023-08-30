@@ -42,6 +42,7 @@ const Clogos = [
    {
     image: Clogo10,
    },
+   
 ]
 
 export default Clogos;
