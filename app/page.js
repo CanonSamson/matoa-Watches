@@ -51,7 +51,7 @@ export default function Home() {
         <div className=" flex flex-col">
           <h1 className=" font-medium text-[60px] ">WAY KAMBAS <br /> MINI EBONY</h1>
           <span className=" flex relative w-[93px] h-[1px] mb-4 bg-black"></span>
-          <p className="text-base pb-4 w-[75%]">MATOA Way Kambas - This wood is chosen to represent the Sumatran Rhino's skin which is designed with an overlap effect on its strap to represent Rhino's skin.</p>
+          <p className="text-base pb-4 w-[75%]">MATOA Way Kambas - This wood is chosen to represent the Sumatran Rhino &apos;s skin which is designed with an overlap effect on its strap to represent Rhino&apos;s skin.</p>
           <Link href=""><buttn className=" border-b border-black relative ">Discover</buttn></Link>
           <div className="flex items-center gap-2 mt-4">
             <button className=" flex items-center gap-2 text-white h-[45px] px-5 bg-primary"> <icons.SlBag size={24} /><span>Add to cart</span></button>
@@ -136,6 +136,7 @@ export default function Home() {
               src={MaskGroup5}
               placeholder="blur"
               blurDataURL="data:"
+              alt=""
             />
           </div>
         </div>
@@ -145,12 +146,14 @@ export default function Home() {
           src={vector2}
           placeholder="blur"
           blurDataURL="data:"
+          alt=""
         />
         <Image
           className=" z-[1] flex absolute  w-[40%] right-0 h-[458px] top-[200px]"
           src={vector3}
           placeholder="blur"
           blurDataURL="data:"
+          alt=""
         />
       </section>
 
@@ -214,6 +217,7 @@ export default function Home() {
           src={vector4}
           placeholder="blur"
           blurDataURL="data:"
+          alt=''
         />
         <div className="max-w-[1110px] mt-[20px] flex mx-auto items-start gap-10">
           <div className="flex items-center gap-4">
@@ -221,11 +225,13 @@ export default function Home() {
               src={left}
               placeholder="blur"
               blurDataURL="data:"
+              alt=""
             />
             <Image
               src={right}
               placeholder="blur"
               blurDataURL="data:"
+              alt=""
             />
           </div>
         </div>
@@ -242,26 +248,31 @@ export default function Home() {
             src={instagram1}
             placeholder="blur"
             blurDataURL="data:"
+            alt=""
           />
           <Image
             src={instagram2}
             placeholder="blur"
             blurDataURL="data:"
+            alt=""
           />
           <Image
             src={instagram3}
             placeholder="blur"
             blurDataURL="data:"
+            alt=""
           />
           <Image
             src={instagram4}
             placeholder="blur"
             blurDataURL="data:"
+            alt=""
           />
           <Image
             src={instagram5}
             placeholder="blur"
             blurDataURL="data:"
+            alt=""
           />
         </div>
       </section>

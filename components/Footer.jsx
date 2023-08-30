@@ -23,7 +23,8 @@ const Footer = () => {
           <li>
             <ul className=" flex flex-col gap-4">
               <li>
-                <Image src={logowhite} />
+                <Image src={logowhite}
+                  alt="" />
               </li>
               <li>
                 Store & Office Jl. Setrasari Kulon III, No. 10-12, Sukarasa,
