@@ -39,21 +39,21 @@ export default function Home() {
         blurDataURL="data:@/assets/vector.svg"
         alt=" image"
       />
-      <header className=" relative my-10 p-10 bg-secondary max-w-[1110px] mx-auto flex items-start ">
+      <header className=" relative my-10 md:p-10 bg-secondary max-w-[1110px] mx-auto flex flex-col md:flex-row items-start ">
 
         <Image
           src={image1}
           placeholder="blur"
           blurDataURL="data:@/assets/image1.png"
           alt="hero images"
-          className="mb-[-200px] w-[50%] relative"
+          className="md:mb-[-200px] md:w-[50%] relative"
         />
-        <div className=" flex flex-col">
-          <h1 className=" font-medium text-[60px] ">WAY KAMBAS <br /> MINI EBONY</h1>
+        <div className=" flex flex-col px-2 md:px-0">
+          <h1 className=" font-medium md:text-[60px] text-[40px] ">WAY KAMBAS <br /> MINI EBONY</h1>
           <span className=" flex relative w-[93px] h-[1px] mb-4 bg-black"></span>
-          <p className="text-base pb-4 w-[75%]">MATOA Way Kambas - This wood is chosen to represent the Sumatran Rhino &apos;s skin which is designed with an overlap effect on its strap to represent Rhino&apos;s skin.</p>
+          <p className="text-base pb-4 md:w-[75%]">MATOA Way Kambas - This wood is chosen to represent the Sumatran Rhino &apos;s skin which is designed with an overlap effect on its strap to represent Rhino&apos;s skin.</p>
           <Link href=""><buttn className=" border-b border-black relative ">Discover</buttn></Link>
-          <div className="flex items-center gap-2 mt-4">
+          <div className="flex items-center gap-2 mt-4 pb-20">
             <button className=" flex items-center gap-2 text-white h-[45px] px-5 bg-primary"> <icons.SlBag size={24} /><span>Add to cart</span></button>
             <button className=" flex items-center gap-2 text-white h-[45px]  border px-5 border-primary">
               <Image
@@ -71,7 +71,7 @@ export default function Home() {
         </div>
       </header>
 
-      <section className="max-w-[1110px] text-base mx-auto grid grid-cols-2 gap-5 mt-[120px]">
+      <section className="max-w-[1110px] px-2 text-base mx-auto grid md:grid-cols-2 gap-5 mt-[120px]">
         <div className=" flex flex-col p-5 bg-white ">
           <h2>Luxurious Eyewear</h2>
           <p className=" text-[12px]">See the beauty of exotic world with the luxurious glasses</p>
@@ -102,11 +102,11 @@ export default function Home() {
 
       <section className="max-w-[1110px] text-base mx-auto  mt-[70px]">
         <div>
-          <h3 className="  font-medium text-2xl">Monthly Deals</h3>
+          <h3 className="  font-medium text-xl md:text-2xl">Monthly Deals</h3>
           <span className=" flex relative w-[93px] h-[1px] mb-4 bg-black"></span>
         </div>
 
-        <div className=" grid grid-cols-4 py-[100px] gap-4">
+        <div className=" grid grid-cols-2 md:grid-cols-4 py-[100px] gap-2 md:gap-4">
           {
             MonthlyDeals.map((item, index) => (
               <ProductCard key={index} image={item.image}
@@ -118,14 +118,14 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="relative text-base">
-        <div className="max-w-[1110px] pr-[10%]  mx-auto ">
+      <section className="relative text-base p-2 ">
+        <div className="max-w-[1110px] md:pr-[10%]  mx-auto ">
           <div>
             <h3 className="  font-medium text-2xl">Recent News</h3>
             <span className=" flex relative w-[93px] h-[1px] mb-4 bg-black"></span>
           </div>
 
-          <div className=" py-[100px] text-base gap-4 flex  items-center">
+          <div className=" py-[100px] text-base gap-4 flex  flex-col-reverse md:flex-row items-center">
             <div >
               <spa>Where To Travel</spa>
               <h3 className="text-2xl">Matoa Where To Travel? Yogyakarta</h3>
@@ -149,7 +149,7 @@ export default function Home() {
           alt=""
         />
         <Image
-          className=" z-[1] flex absolute  w-[40%] right-0 h-[458px] top-[200px]"
+          className=" z-[1] flex absolute w-[40%] right-0 h-[458px] top-[200px]"
           src={vector3}
           placeholder="blur"
           blurDataURL="data:"
@@ -158,18 +158,18 @@ export default function Home() {
       </section>
 
 
-      <section className="max-w-[1110px] text-base mx-auto  pb-[70px]">
-        <div className=" grid grid-cols-3 gap-2">
+      <section className="max-w-[1110px] text-base mx-auto p-2  pb-[70px]">
+        <div className=" grid md:grid-cols-3 grid-cols- gap-2">
           <div>
-            <h5 className="  font-medium text-xl">Monthly Deals</h5>
+            <h5 className="  font-medium text-base md:text-xl">Monthly Deals</h5>
             <span className=" flex relative w-[50px] h-[1px] mb-4 bg-black"></span>
           </div>
           <div>
-            <h5 className="  font-medium text-xl">Ebony Series</h5>
+            <h5 className="  font-medium text-base md:text-xl">Ebony Series</h5>
             <span className=" flex relative w-[50px] h-[1px] mb-4 bg-black"></span>
           </div>
           <div>
-            <h5 className="  font-medium text-xl">Featured</h5>
+            <h5 className="  font-medium text-base md:text-xl">Featured</h5>
             <span className=" flex relative w-[50px] h-[1px] mb-4 bg-black"></span>
           </div>
           {
@@ -190,9 +190,9 @@ export default function Home() {
       </section>
 
 
-      <section className=" relative text-base   pb-[70px]">
+      <section className=" relative text-base px-2   pb-[70px]">
 
-        <div className="max-w-[1110px] mt-[70px] flex mx-auto items-start gap-10">
+        <div className="max-w-[1110px] mt-[70px] flex md:flex-row flex-col-reverse mx-auto items-start gap-10">
           <Image
             className="relative z-[2]  mt-[70px] h-[321px] w-[515px]"
             src={MaskGroup7}
@@ -201,7 +201,7 @@ export default function Home() {
           />
           <div className=" flex flex-col gap-5 text-base">
             <div>
-              <h5 className="  font-medium text-2xl">Testimonials</h5>
+              <h5 className="  font-medium text-xl md:text-2xl">Testimonials</h5>
               <span className=" flex relative w-[70px] h-[1px] mb-4 bg-black"></span>
             </div>
             <p>Loving my new KAILI watch from @matoa_id, the first ever Indonesian watch local brand that uses wood as their main material. Like any other Matoa products, KAILI is inspired by Indonesian heritage.</p>
@@ -211,7 +211,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className=" z-[1] flex absolute bg-secondary  w-[515px] left-0 h-[300px] top-0"></div>
+        <div className=" z-[1] flex absolute bg-secondary  md:w-[515px] left-0 h-[300px] top-0"></div>
         <Image
           className=" z-[1] flex absolute left-0  top-[-70px]"
           src={vector4}
@@ -237,9 +237,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="max-w-[1110px] text-base mx-auto  ">
+      <section className="max-w-[1110px] text-base px-2 mx-auto  ">
         <div>
-          <h3 className="  font-medium text-2xl">Instagram</h3>
+          <h3 className="  font-medium text-xl md:text-2xl">Instagram</h3>
           <span className=" flex relative w-[93px] h-[1px] mb-4 bg-black"></span>
         </div>
 

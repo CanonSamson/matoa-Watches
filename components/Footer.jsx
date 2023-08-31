@@ -5,7 +5,7 @@ import logowhite from "@/assets/logwhite.svg";
 const Footer = () => {
   return (
     <footer>
-      <div className="bg-[#DA5E42] flex justify-center w-full py-10 mt-10">
+      <div className="bg-[#DA5E42] px-2 flex justify-center w-full py-10 mt-10">
         <div className=" max-w-[1110px] w-full text-base m-auto grid justify-center items-center grid-cols-5 gap-4">
           {Clogos.map((item, index) => (
             <Image
@@ -18,8 +18,8 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="bg-primary flex justify-center w-full py-10  text-white">
-        <ul className=" max-w-[1110px] w-full text-base m-auto grid justify-center items-start grid-cols-4 gap-5">
+      <div className="bg-primary flex justify-center w-full py-10   text-white">
+        <ul className=" max-w-[1110px] w-full text-base m-auto grid px-2 justify-center items-start  grid-cols-2 px-s2  md:grid-cols-4 gap-5">
           <li>
             <ul className=" flex flex-col gap-4">
               <li>

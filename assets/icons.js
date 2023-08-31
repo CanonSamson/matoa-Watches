@@ -5,6 +5,7 @@ import { MdOutlineArrowBackIosNew } from "react-icons/md"
 import { IoIosArrowForward } from "react-icons/io"
 import { BsHeart } from "react-icons/bs"
 import {HiOutlineArrowLeft, HiOutlineArrowRight} from "react-icons/hi"
+import {FiMenu, FiX} from "react-icons/fi"
 
 const icons = {
     CiSearch,
@@ -14,7 +15,9 @@ const icons = {
     IoIosArrowForward,
     BsHeart,
     HiOutlineArrowLeft,
-    HiOutlineArrowRight
+    HiOutlineArrowRight,
+    FiMenu,
+    FiX
 }
 
 export default icons;
